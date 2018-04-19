@@ -32,18 +32,18 @@ contract WordGuessingGame{
     }
     
     Player[2] private players;      // Players
-	Player public theWinner;        // The winner
+    Player public theWinner;        // The winner
 
     mapping(address => bytes32) public wordCommits;  // holds a map of player's address to their committed hash
      
-	bool public gameFinished;       // whether both players have submitted their guesses
-	bool public gameReady;          // whether both players have submitted their bets, words, and challeneges
-	bool public player1Committed;   // whether a player has committed the hash of his/her word
-	bool public player2Committed;
-	bool public player1Revealed;    // whether a player has revealed the word
-	bool public player2Revealed;
-	bool public player1Cheater;     // whether a player has cheated after comparing the committed hash to the revealed word
-	bool public player2Cheater;
+    bool public gameFinished;       // whether both players have submitted their guesses
+    bool public gameReady;          // whether both players have submitted their bets, words, and challeneges
+    bool public player1Committed;   // whether a player has committed the hash of his/her word
+    bool public player2Committed;
+    bool public player1Revealed;    // whether a player has revealed the word
+    bool public player2Revealed;
+    bool public player1Cheater;     // whether a player has cheated after comparing the committed hash to the revealed word
+    bool public player2Cheater;
 	
     uint public commitPhaseEndTime; // period during which players can commit their words
     uint minimumBet;                // a minimum bet is required to be able to participate
