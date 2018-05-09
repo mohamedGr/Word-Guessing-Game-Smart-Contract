@@ -26,7 +26,7 @@ contract WordGuessingGame{
         uint score;                 // score after guessing two character
         bool ready;                 // the player has submitted a word and a challenge   
         uint16 challengeIndex1;     // indices of the first and second characters to be guessed by the opponent
-	    uint16 challengeIndex2; 
+	uint16 challengeIndex2; 
         bool played;                // whther the player has made a guess or not
         uint gains;                 // total gain at the end of the game
     }
